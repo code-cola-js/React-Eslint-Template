@@ -1,45 +1,3 @@
-## 安装依赖
-
-这些依赖是与 JavaScript 和 React.js 前端开发相关的工具和库。下面是每个依赖的功能和作用：
-
-1. **@babel/core**: Babel 是一个 JavaScript 编译器，@babel/core 是 Babel 的核心模块，用于将新版本的 JavaScript 代码转换为向后兼容的旧版本代码，以便在不支持最新语法和特性的环境中运行。
-
-2. **@babel/eslint-parser**: 这个依赖是 Babel 的 ESLint 解析器插件，用于在 ESLint 中解析 Babel 转换后的代码，使得 ESLint 可以理解并对其进行静态代码分析和规则检查。
-
-3. **@babel/plugin-transform-react-jsx**: 这是一个 Babel 插件，用于将 JSX 语法转换为普通的 JavaScript 函数调用或对象表示，使得 React 组件可以在浏览器中运行。
-
-4. **@babel/preset-env**: 这个 Babel 预设(preset)用于根据目标运行环境自动确定需要的转换和插件，以确保代码在目标环境中的兼容性。
-
-5. **eslint**: ESLint 是一个用于检查和修复 JavaScript 代码的静态分析工具，它帮助开发人员遵循一致的编码风格和规范，以减少错误和提高代码质量。
-
-6. **eslint-plugin-react**: 这是一个 ESLint 插件，提供了用于检查和维护 React.js 代码规范的规则集。
-
-7. **eslint-plugin-react-hooks**: 这个 ESLint 插件为 React 的 Hook API 提供了规则和建议，以帮助开发人员编写正确和一致的 Hook 使用方式。
-
-8. **@babel/plugin-proposal-private-property-in-object**: 这是一个 Babel 插件，用于将私有属性的提案转换为普通的 JavaScript 代码，使得私有属性可以在浏览器中运行。
-
-这些依赖的组合通常用于支持使用最新的 JavaScript 语法和特性，同时进行代码风格检查和规范，并确保 React.js 组件的正确性和性能。
-
-```shell
-npm install --save-dev @babel/core @babel/eslint-parser @babel/plugin-transform-react-jsx @babel/preset-env eslint @babel/plugin-proposal-private-property-in-object eslint-plugin-react eslint-plugin-react-hooks
-```
-
-### 配置 `Babel` `.babelrc`
-
-```json
-{
-    "presets": [
-      "@babel/preset-env"
-    ],
-    "plugins": [
-      "@babel/plugin-transform-react-jsx"
-    ]
-  }
-```
-
-### 配置 `ESLint` `.eslintrc.json`
-
-```json
 {
   "parser": "@babel/eslint-parser",
     "extends": [
@@ -264,4 +222,4 @@ npm install --save-dev @babel/core @babel/eslint-parser @babel/plugin-transform-
         ]
     }
 }
-```
+  
